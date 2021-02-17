@@ -212,7 +212,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-02-2021 08:01</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -256,41 +256,7 @@
                             <div id="results" class="tab-pane fade">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-sm-4">
-
-                                            <div style="width:300px;" class="chart-container automated-and-manual-results">
-                                                <div class="ct-chart ct-square"></div>
-                                            </div>
-                                            <script>
-
-                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
-                                                // Our series array that contains series objects or in this case series data arrays
-
-                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
-
-                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-                                                // as you saw in the previous example
-                                                var options = {
-                                                    width: 350,
-                                                    height: 300
-                                                };
-
-                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                                                    new Chartist.Pie('.ct-chart', {
-                                                        series: series,
-                                                        labels: labels,
-                                                    }, {
-                                                        donut: true,
-                                                        donutWidth: 60,
-                                                        donutSolid: true,
-                                                        startAngle: 270,
-                                                        showLabel: true
-                                                    }, options);
-                                                });
-
-                                            </script>
-                                        </div>
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-12">
 
                                         <table class="table">
                                             <thead>
@@ -303,12 +269,11 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count">
-                                                                        <a href="01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                     </td>
-                                                <td class="automated-stats">2</td>
-                                                <td class="automated-stats">100%</td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -362,7 +327,7 @@
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">0</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -384,11 +349,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>215ms</td>
-                                                        <td>167ms</td>
-                                                        <td>50ms</td>
-                                                        <td>165ms</td>
-                                                        <td>107ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -400,50 +365,7 @@
                                             <div class="col-sm-12">
                                                 <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                            <table class="scenario-result-table table" id="scenario-results">
-                                                <thead>
-                                                <tr>
-                                                    <th>Feature</th>
-                                                    <th class="test-name-column">Scenario</th>
-                                                    <th>Steps</th>
-                                                    <th>Start Time</th>
-                                                    <th>Duration</th>
-                                                    <th>Result</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr class="scenario-result SUCCESS">
-                                                    <td>
-                                                            <a href="ac9ce96c7c0125d5776bd511b8ce5d480aa2fa1baae03448b15e80f3f4c8026c.html">Math.js API</a>
-                                                    </td>
-                                                    <td>
-                                                            <a href="5cacf0a56cff08f679d9faf2ec0780fba8f4696b124448fdf341b2ea98822220.html">GET /v4/?expr supports calculating a single expression</a>
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>08:01:18</td>
-                                                    <td>165ms</td>
-                                                    <td>
-                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                style="display:none">SUCCESS</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="scenario-result SUCCESS">
-                                                    <td>
-                                                            <a href="ac9ce96c7c0125d5776bd511b8ce5d480aa2fa1baae03448b15e80f3f4c8026c.html">Math.js API</a>
-                                                    </td>
-                                                    <td>
-                                                            <a href="adb3e4e34a0dbde24ec215604782b7695a41ba5bf0d914d0a6313c200c31e3f2.html">POST /v4 supports calculating multiple expressions in one request</a>
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>08:01:18</td>
-                                                    <td>050ms</td>
-                                                    <td>
-                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                style="display:none">SUCCESS</span>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
+                                            No automated tests were executed
 
                                             </div>
                                         </div>
