@@ -4,7 +4,9 @@
 [![dependencies Status](https://status.david-dm.org/gh/serenity-js/serenity-js-mocha-template.svg)](https://david-dm.org/serenity-js/serenity-js-mocha-template)
 
 Use this [template repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
-to get started with acceptance testing your REST/HTTP APIs using [Serenity/JS](https://serenity-js.org) and [Mocha](https://mochajs.org/). You might also want to have a look at the [Serenity BDD reports](https://serenity-js.github.io/serenity-js-mocha-template/) produced by this project.
+to get started with acceptance testing your REST/HTTP APIs using [Serenity/JS](https://serenity-js.org) and [Mocha](https://mochajs.org/).
+
+You might also want to have a look at the [Serenity BDD reports](https://serenity-js.github.io/serenity-js-mocha-template/) produced by this project.
 
 Learn more:
 - [Serenity/JS Website](https://serenity-js.org)
