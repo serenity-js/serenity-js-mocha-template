@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Math.js API","GET /v4/?expr supports calculating a single expression","SUCCESS","2021-03-22T13:56:24.278Z[Etc/UTC]","0.0","0.16"
-"Math.js API","POST /v4 supports calculating multiple expressions in one request","SUCCESS","2021-03-22T13:56:24.437Z[Etc/UTC]","0.0","0.06"
+"Math.js API","GET /v4/?expr supports calculating a single expression","SUCCESS","2021-03-22T20:48:29.85Z[Etc/UTC]","0.0","0.11"
+"Math.js API","POST /v4 supports calculating multiple expressions in one request","SUCCESS","2021-03-22T20:48:29.958Z[Etc/UTC]","0.0","0.06"
