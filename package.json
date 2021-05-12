@@ -39,7 +39,7 @@
     "@serenity-js/rest": "^2.28.0",
     "@serenity-js/serenity-bdd": "^2.28.0",
     "@types/mocha": "^8.2.2",
-    "@types/node": "^14.14.43",
+    "@types/node": "^14.14.45",
     "cross-env": "^7.0.3",
     "mocha": "^8.4.0",
     "npm-failsafe": "^0.4.3",
