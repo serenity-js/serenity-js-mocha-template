@@ -1,7 +1,8 @@
+/* eslint-disable unicorn/filename-case, unicorn/consistent-function-scoping */
 import 'mocha';
 
-import { actorCalled } from '@serenity-js/core';
 import { Ensure, equals } from '@serenity-js/assertions';
+import { actorCalled } from '@serenity-js/core';
 import { GetRequest, LastResponse, PostRequest, Send } from '@serenity-js/rest';
 import { escape } from 'querystring';
 
@@ -41,7 +42,7 @@ describe('Math.js API', () => {
                 // you can configure it with an interface specifying the shape of the expected response body
                 Ensure.that(LastResponse.body<CalculatedExpressions>(), equals({
                     result: [ '4', '2' ],
-                    error: null,
+                    error: null,            // eslint-disable-line unicorn/no-null
                 })),
             ));
     });
