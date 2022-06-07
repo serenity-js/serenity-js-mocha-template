@@ -1,7 +1,6 @@
 # Serenity/JS Mocha Template
 
 [![Build Status](https://github.com/serenity-js/serenity-js-mocha-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-mocha-template/actions)
-[![dependencies Status](https://status.david-dm.org/gh/serenity-js/serenity-js-mocha-template.svg)](https://david-dm.org/serenity-js/serenity-js-mocha-template)
 
 Use this [template repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
 to get started with acceptance testing your REST/HTTP APIs using [Serenity/JS](https://serenity-js.org) and [Mocha](https://mochajs.org/).
