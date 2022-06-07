@@ -6,6 +6,7 @@ Use this [template repository](https://help.github.com/en/articles/creating-a-re
 to get started with acceptance testing your REST/HTTP APIs using [Serenity/JS](https://serenity-js.org) and [Mocha](https://mochajs.org/).
 
 Learn more:
+
 - [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-mocha-template/)
 - [Serenity/JS Website](https://serenity-js.org)
 - [Serenity/JS API Docs](https://serenity-js.org/modules)
@@ -13,7 +14,8 @@ Learn more:
 ## Prerequisites
 
 To use this project, you'll need:
-- Node.js, a Long-Term Support (LTS) release version 12 or later - [download](https://nodejs.org/en/)
+
+- Node.js, a Long-Term Support (LTS) release version 14 or later - [download](https://nodejs.org/en/)
 - Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 8 or later - [download](https://adoptopenjdk.net/)
 
 Follow the [installation instructions](https://serenity-js.org/handbook/integration/runtime-dependencies.html) to help you verify your setup.
@@ -25,17 +27,18 @@ This repository is a GitHub template. You can use it to create new [GitHub repos
 ### Installation
 
 Once you have the code on your computer, use your computer terminal to run the following command in the directory where you've cloned the project:
+
 ```
 npm ci
 ```
 
-Running [`npm ci`](https://docs.npmjs.com/cli/v6/commands/npm-ci) downloads the [Node modules](https://docs.npmjs.com/about-packages-and-modules) this project depends on, as well as the latest version of [`chromedriver`](https://www.npmjs.com/package/chromedriver) and the [Serenity BDD CLI](https://github.com/serenity-bdd/serenity-cli) reporter jar. 
+Running [`npm ci`](https://docs.npmjs.com/cli/v6/commands/npm-ci) downloads the [Node modules](https://docs.npmjs.com/about-packages-and-modules) this project depends on, as well as the latest version of [`chromedriver`](https://www.npmjs.com/package/chromedriver) and the [Serenity BDD CLI](https://github.com/serenity-bdd/serenity-cli) reporter jar.
 
 ### Corporate networks
 
 If your network administrators require you to use proxy servers or an internal artifact registry (Artifactory, Nexus, etc.), your development environment might require some additional configuration.
 
-The easiest way to do it is to create an [`.npmrc` file](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc) in your home directory: 
+The easiest way to do it is to create an [`.npmrc` file](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc) in your home directory:
 
 ```
 proxy=http://user:password@host.mycompany.com:8080/
@@ -66,7 +69,7 @@ To execute only those scenarios which names match a given pattern, run:
 
 ```
 npx mocha --grep="multiple expressions"
-``` 
+```
 
 To learn more about available options, run:
 
@@ -81,7 +84,7 @@ Do you find Serenity/JS useful? Give it a star! &#9733;
 Found a bug? Need a feature? Raise [an issue](https://github.com/serenity-js/serenity-js/issues?state=open)
 or submit a pull request.
 
-Have feedback? Let me know on Twitter: [@JanMolak](https://twitter.com/JanMolak) 
+Have feedback? Let me know on Twitter: [@JanMolak](https://twitter.com/JanMolak)
 
 If you'd like to chat with fellow Serenity/JS users, join us on [Gitter Chat](https://gitter.im/serenity-js/Lobby).
 
