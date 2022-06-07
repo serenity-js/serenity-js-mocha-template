@@ -10,7 +10,7 @@ export class Actors implements Cast {
     prepare(actor: Actor): Actor {
         return actor.whoCan(
             CallAnApi.at(this.baseApiUrl),
-            TakeNotes.usingASharedNotepad()
+            TakeNotes.usingAnEmptyNotepad()
         );
     }
 }
