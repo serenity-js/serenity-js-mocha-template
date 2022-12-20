@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "ms-playwright.playwright",
+    "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "hbenl.vscode-mocha-test-adapter"
   ],
