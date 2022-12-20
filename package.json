@@ -33,12 +33,12 @@
     "npm": "^6 || ^7 || ^8.0.0"
   },
   "dependencies": {
-    "@serenity-js/assertions": "^3.0.0-rc",
-    "@serenity-js/console-reporter": "^3.0.0-rc",
-    "@serenity-js/core": "^3.0.0-rc",
-    "@serenity-js/mocha": "^3.0.0-rc",
-    "@serenity-js/rest": "^3.0.0-rc",
-    "@serenity-js/serenity-bdd": "^3.0.0-rc",
+    "@serenity-js/assertions": "^3.0.0-rc.37",
+    "@serenity-js/console-reporter": "^3.0.0-rc.37",
+    "@serenity-js/core": "^3.0.0-rc.37",
+    "@serenity-js/mocha": "^3.0.0-rc.37",
+    "@serenity-js/rest": "^3.0.0-rc.37",
+    "@serenity-js/serenity-bdd": "^3.0.0-rc.37",
     "@types/mocha": "^9.1.1",
     "@types/node": "^16.11.38",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
