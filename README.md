@@ -2,6 +2,11 @@
 
 [![Build Status](https://github.com/serenity-js/serenity-js-mocha-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-mocha-template/actions)
 
+[![Serenity/JS on GitHub](https://img.shields.io/badge/github-serenity--js-yellow?logo=github)](https://github.com/serenity-js/serenity-js)
+[![Serenity/JS on StackOverflow](https://img.shields.io/badge/stackoverflow-serenity--js-important?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/serenity-js)
+[![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![Chat on Gitter](https://badges.gitter.im/serenity-js/Lobby.svg)](https://gitter.im/serenity-js/Lobby)
+
 Use this [template repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
 to get started with acceptance testing your REST/HTTP APIs using [Serenity/JS](https://serenity-js.org) and [Mocha](https://mochajs.org/).
 
@@ -40,7 +45,11 @@ Follow the [installation instructions](https://serenity-js.org/handbook/integrat
 
 ## Usage
 
-This repository is a GitHub template. You can use it to create new [GitHub repositories](https://help.github.com/en/articles/creating-a-repository-from-a-template) or simply [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+This repository is a GitHub template. You can use it to [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+You can also launch it in a virtual Gitpod workspace without having to install anything on your machine:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 ### Installation
 
