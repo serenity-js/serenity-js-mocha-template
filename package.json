@@ -34,12 +34,12 @@
     "npm": "^6 || ^7 || ^8 || ^9"
   },
   "dependencies": {
-    "@serenity-js/assertions": "^3.2.0",
-    "@serenity-js/console-reporter": "^3.2.0",
-    "@serenity-js/core": "^3.2.0",
-    "@serenity-js/mocha": "^3.2.0",
-    "@serenity-js/rest": "^3.2.0",
-    "@serenity-js/serenity-bdd": "^3.2.0",
+    "@serenity-js/assertions": "^3.2.1",
+    "@serenity-js/console-reporter": "^3.2.1",
+    "@serenity-js/core": "^3.2.1",
+    "@serenity-js/mocha": "^3.2.1",
+    "@serenity-js/rest": "^3.2.1",
+    "@serenity-js/serenity-bdd": "^3.2.1",
     "mocha": "^10.2.0"
   },
   "devDependencies": {
