@@ -6,7 +6,7 @@ import { actorCalled } from '@serenity-js/core';
 import { GetRequest, LastResponse, PostRequest, Send } from '@serenity-js/rest';
 import { escape } from 'querystring';
 
-describe('Math.js API', () => {
+describe('Math-js API', () => {
 
     describe('GET /v4/?expr', () => {
 

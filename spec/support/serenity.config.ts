@@ -1,8 +1,6 @@
 import 'mocha';
-
-import { ConsoleReporter } from '@serenity-js/console-reporter';
-import { ArtifactArchiver, configure } from '@serenity-js/core';
-import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
+import { configure } from '@serenity-js/core';
+import path from 'path';
 
 import { Actors } from '../../src';
 
@@ -15,8 +13,8 @@ import { Actors } from '../../src';
 configure({
     actors: new Actors(process.env.BASE_API_URL || 'http://api.mathjs.org/v4/'),
     crew: [
-        ConsoleReporter.withDefaultColourSupport(),
-        new SerenityBDDReporter(),
-        ArtifactArchiver.storingArtifactsAt(__dirname, '../../target/site/serenity'),
+        [ '@serenity-js/console-reporter', { theme: 'auto' } ],
+        [ '@serenity-js/core:ArtifactArchiver', { outputDirectory: path.resolve(__dirname, '../../target/site/serenity') } ],
+        [ '@serenity-js/serenity-bdd', { specDirectory: path.resolve(__dirname, '../../spec') } ],
     ]
 });
