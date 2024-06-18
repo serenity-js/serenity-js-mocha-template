@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
-    "@types/node": "^18.19.35",
+    "@types/node": "^18.19.36",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "cross-env": "^7.0.3",
