@@ -34,6 +34,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.6.9
         if: matrix.node-version == '22.x' && github.ref == 'refs/heads/main'
         with:
-          BRANCH: gh-pages
-          FOLDER: target/site/serenity
-          CLEAN: true
+          branch: gh-pages
+          folder: target/site/serenity
+          clean: true
