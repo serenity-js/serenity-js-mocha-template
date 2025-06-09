@@ -38,7 +38,7 @@
     "@serenity-js/mocha": "^3.31.16",
     "@serenity-js/rest": "^3.31.16",
     "@serenity-js/serenity-bdd": "^3.31.16",
-    "mocha": "^11.5.0"
+    "mocha": "^11.6.0"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
