@@ -32,12 +32,12 @@
     "node": "^18.12 || ^20 || ^22"
   },
   "dependencies": {
-    "@serenity-js/assertions": "^3.33.1",
-    "@serenity-js/console-reporter": "^3.33.1",
-    "@serenity-js/core": "^3.33.1",
-    "@serenity-js/mocha": "^3.33.1",
-    "@serenity-js/rest": "^3.33.1",
-    "@serenity-js/serenity-bdd": "^3.33.1",
+    "@serenity-js/assertions": "^3.34.0",
+    "@serenity-js/console-reporter": "^3.34.0",
+    "@serenity-js/core": "^3.34.0",
+    "@serenity-js/mocha": "^3.34.0",
+    "@serenity-js/rest": "^3.34.0",
+    "@serenity-js/serenity-bdd": "^3.34.0",
     "mocha": "^11.7.1"
   },
   "devDependencies": {
