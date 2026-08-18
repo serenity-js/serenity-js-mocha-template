@@ -15,7 +15,9 @@ configure({
     actors: new Actors(process.env.BASE_API_URL || 'http://api.mathjs.org/v4/'),
     crew: [
         [ '@serenity-js/console-reporter', { theme: 'auto' } ],
-        [ '@serenity-js/core:ArtifactArchiver', { outputDirectory: path.resolve(__dirname, '../../target/site/serenity') } ],
-        [ '@serenity-js/serenity-bdd', { specDirectory: path.resolve(__dirname, '../../spec') } ],
+        [ '@serenity-js/html-reporter', {
+            outputDirectory: path.resolve(__dirname, '../../reports/serenity-js'),
+            specDirectory: path.resolve(__dirname, '../../spec'),
+        } ],
     ]
 });
