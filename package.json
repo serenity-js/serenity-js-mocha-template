@@ -29,12 +29,12 @@
     "node": "^20 || ^22 || ^24"
   },
   "dependencies": {
-    "@serenity-js/assertions": "^3.45.9",
-    "@serenity-js/console-reporter": "^3.45.9",
-    "@serenity-js/core": "^3.45.9",
-    "@serenity-js/html-reporter": "^3.45.9",
-    "@serenity-js/mocha": "^3.45.9",
-    "@serenity-js/rest": "^3.45.9",
+    "@serenity-js/assertions": "^3.46.1",
+    "@serenity-js/console-reporter": "^3.46.1",
+    "@serenity-js/core": "^3.46.0",
+    "@serenity-js/html-reporter": "^3.46.1",
+    "@serenity-js/mocha": "^3.46.1",
+    "@serenity-js/rest": "^3.46.1",
     "mocha": "^11.8.0"
   },
   "devDependencies": {
