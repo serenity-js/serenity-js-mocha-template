@@ -35,7 +35,7 @@
     "@serenity-js/html-reporter": "^3.46.1",
     "@serenity-js/mocha": "^3.46.1",
     "@serenity-js/rest": "^3.46.1",
-    "mocha": "^11.8.0"
+    "mocha": "^12.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
