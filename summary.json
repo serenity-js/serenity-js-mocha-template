@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-10-29T00:06:40.838Z",
+  "generated": "2026-10-29T11:55:12.881Z",
   "title": "@serenity-js/serenity-js-mocha-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "286cdc549ab626a48c13aaa718a310fc9c0585e5",
+    "commit": "f78ecec1a9933100273642e5e4d7a1e5288ff405",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/40791742858"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/40868946514"
   },
   "latestRun": {
-    "timestamp": "2026-10-29T00:06:40.364Z",
-    "label": "2472",
+    "timestamp": "2026-10-29T11:55:12.383Z",
+    "label": "2477",
     "totals": {
       "passed": 2,
       "failed": 0,
@@ -20,9 +20,9 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 445
+    "duration": 469
   },
-  "runs": 22,
+  "runs": 23,
   "delta": {
     "passed": 0,
     "failed": 0,
@@ -48,12 +48,12 @@
     {
       "name": "GET /v4/?expr supports calculating a single expression",
       "source": "math-js_api.spec.ts",
-      "duration": 353
+      "duration": 434
     },
     {
       "name": "POST /v4 supports calculating multiple expressions in one request",
       "source": "math-js_api.spec.ts",
-      "duration": 87
+      "duration": 31
     }
   ]
 }
