@@ -1,59 +1,93 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-10-29T11:55:12.881Z",
+  "generated": "2026-11-09T19:04:51.001Z",
   "title": "@serenity-js/serenity-js-mocha-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "f78ecec1a9933100273642e5e4d7a1e5288ff405",
+    "commit": "afa27e2750569f701c9fb79acef04982c5e5c3af",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/40868946514"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/42679692914"
   },
   "latestRun": {
-    "timestamp": "2026-10-29T11:55:12.383Z",
-    "label": "2477",
+    "timestamp": "2026-11-09T19:04:40.912Z",
+    "label": "2484",
     "totals": {
-      "passed": 2,
+      "passed": 0,
       "failed": 0,
       "pending": 0,
       "skipped": 0,
       "compromised": 0,
-      "error": 0
+      "error": 2
     },
-    "duration": 469
+    "duration": 10054
   },
-  "runs": 23,
+  "runs": 24,
   "delta": {
-    "passed": 0,
+    "passed": -2,
     "failed": 0,
     "pending": 0,
     "skipped": 0,
     "compromised": 0,
-    "error": 0
+    "error": 2
   },
-  "failureClusters": [],
+  "failureClusters": [
+    {
+      "fingerprint": "Error:Timeout-of-Nms-exceeded.-For-async-tests-and-hooks,-ensure-\"done()\"-is-called;-if-returning-a-Promise,-ensure-it-resolves.-(math-js_api.spec.ts)",
+      "errorType": "Error",
+      "message": "Timeout of Nms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (math-js_api.spec.ts)",
+      "scenarios": [
+        {
+          "name": "GET /v4/?expr supports calculating a single expression",
+          "source": "math-js_api.spec.ts",
+          "failingStep": "Apisitt sends a request to calculate 2 + 2"
+        },
+        {
+          "name": "POST /v4 supports calculating multiple expressions in one request",
+          "source": "math-js_api.spec.ts",
+          "failingStep": "Apisitt sends a request to calculate 2 + 2, 5 - 3"
+        }
+      ]
+    }
+  ],
   "consistency": {
     "flaky": [],
     "inconsistent": [],
-    "degraded": [],
+    "degraded": [
+      {
+        "name": "GET /v4/?expr supports calculating a single expression",
+        "source": "math-js_api.spec.ts",
+        "lastOutcome": "ERROR"
+      },
+      {
+        "name": "GET /v4/?expr supports calculating a single expression",
+        "source": "math-js_api.spec.ts",
+        "lastOutcome": "FAILURE"
+      },
+      {
+        "name": "POST /v4 supports calculating multiple expressions in one request",
+        "source": "math-js_api.spec.ts",
+        "lastOutcome": "FAILURE"
+      }
+    ],
     "recovered": []
   },
   "scores": {
-    "passRate": 100,
+    "passRate": 0,
     "completeness": 100,
-    "consistency": 100,
-    "confidence": 100
+    "consistency": 50,
+    "confidence": 42.5
   },
   "slowest": [
     {
       "name": "GET /v4/?expr supports calculating a single expression",
       "source": "math-js_api.spec.ts",
-      "duration": 434
+      "duration": 5035
     },
     {
       "name": "POST /v4 supports calculating multiple expressions in one request",
       "source": "math-js_api.spec.ts",
-      "duration": 31
+      "duration": 5015
     }
   ]
 }
