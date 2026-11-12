@@ -1,92 +1,75 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-11-12T06:48:17.091Z",
+  "generated": "2026-11-12T21:48:33.432Z",
   "title": "@serenity-js/serenity-js-mocha-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "2c0056516b285a44098a35185f97f7e2eda0f213",
+    "commit": "2315e1e465e5fcc9ac750a503ed688808cf9d464",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/43170556090"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/43313680125"
   },
   "latestRun": {
-    "timestamp": "2026-11-12T06:48:07.012Z",
-    "label": "2494",
+    "timestamp": "2026-11-12T21:48:32.975Z",
+    "label": "2498",
     "totals": {
-      "passed": 0,
+      "passed": 2,
       "failed": 0,
       "pending": 0,
       "skipped": 0,
       "compromised": 0,
-      "error": 2
+      "error": 0
     },
-    "duration": 10056
+    "duration": 439
   },
-  "runs": 26,
+  "runs": 27,
   "delta": {
-    "passed": -2,
+    "passed": 2,
     "failed": 0,
     "pending": 0,
     "skipped": 0,
     "compromised": 0,
-    "error": 2
+    "error": -2
   },
-  "failureClusters": [
-    {
-      "fingerprint": "Error:Timeout-of-Nms-exceeded.-For-async-tests-and-hooks,-ensure-\"done()\"-is-called;-if-returning-a-Promise,-ensure-it-resolves.-(math-js_api.spec.ts)",
-      "errorType": "Error",
-      "message": "Timeout of Nms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (math-js_api.spec.ts)",
-      "scenarios": [
-        {
-          "name": "GET /v4/?expr supports calculating a single expression",
-          "source": "math-js_api.spec.ts"
-        },
-        {
-          "name": "POST /v4 supports calculating multiple expressions in one request",
-          "source": "math-js_api.spec.ts",
-          "failingStep": "Apisitt sends a request to calculate 2 + 2, 5 - 3"
-        }
-      ]
-    }
-  ],
+  "failureClusters": [],
   "consistency": {
     "flaky": [],
     "inconsistent": [],
-    "degraded": [
+    "degraded": [],
+    "recovered": [
       {
         "name": "GET /v4/?expr supports calculating a single expression",
         "source": "math-js_api.spec.ts",
-        "lastOutcome": "ERROR"
+        "lastOutcome": "SUCCESS"
       },
       {
         "name": "GET /v4/?expr supports calculating a single expression",
         "source": "math-js_api.spec.ts",
-        "lastOutcome": "FAILURE"
+        "lastOutcome": "SUCCESS"
       },
       {
         "name": "POST /v4 supports calculating multiple expressions in one request",
         "source": "math-js_api.spec.ts",
-        "lastOutcome": "FAILURE"
+        "lastOutcome": "SUCCESS"
       }
-    ],
-    "recovered": []
+    ]
   },
   "scores": {
-    "passRate": 0,
+    "passRate": 100,
     "completeness": 100,
     "consistency": 50,
-    "confidence": 42.5
+    "confidence": 82.5
   },
   "slowest": [
     {
       "name": "GET /v4/?expr supports calculating a single expression",
       "source": "math-js_api.spec.ts",
-      "duration": 5032
+      "duration": 345
     },
     {
       "name": "POST /v4 supports calculating multiple expressions in one request",
       "source": "math-js_api.spec.ts",
-      "duration": 5018
+      "duration": 92
     }
   ]
 }
