@@ -4,25 +4,25 @@ window.__SERENITY_REPORT_DATA__ = {
     "title": "@serenity-js/serenity-js-mocha-template",
     "totalScenarios": 2,
     "outcomes": {
-      "passed": 2,
+      "passed": 0,
       "failed": 0,
       "pending": 0,
       "skipped": 0,
       "compromised": 0,
-      "error": 0
+      "error": 2
     },
-    "duration": 493,
-    "startedAt": "2026-11-11T20:15:44.296Z",
-    "finishedAt": "2026-11-11T20:15:44.789Z",
+    "duration": 10056,
+    "startedAt": "2026-11-12T06:48:07.012Z",
+    "finishedAt": "2026-11-12T06:48:17.068Z",
     "testRunner": "Mocha"
   },
   "scenarios": [
     {
       "name": "GET /v4/?expr supports calculating a single expression",
       "category": "Math-js API",
-      "outcome": "SUCCESS",
-      "duration": 373,
-      "startedAt": "2026-11-11T20:15:44.296Z",
+      "outcome": "ERROR",
+      "duration": 5032,
+      "startedAt": "2026-11-12T06:48:07.012Z",
       "source": {
         "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts"
       },
@@ -40,41 +40,14 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Apisitt sends a request to calculate 2 + 2",
           "outcome": "SUCCESS",
-          "duration": 341,
+          "duration": 6745,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-11-11T20:15:44.312Z",
+          "startedAt": "2026-11-12T06:48:07.023Z",
           "location": {
             "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
             "line": 20,
             "column": 22
-          },
-          "artifacts": [
-            {
-              "path": "test-runs/2489/serenity-js-mocha-template-1/artifact-get-http---api-mathjs-org-v4-expr-2-20-2b-202-5e1cc4b895.json",
-              "type": "screenshot"
-            }
-          ],
-          "restQuery": {
-            "method": "GET",
-            "url": "http://api.mathjs.org/v4?expr=2%20%2B%202",
-            "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
-            "statusCode": 200,
-            "responseHeaders": "access-control-allow-headers: Content-Type, X-Requested-With\naccess-control-allow-methods: GET, POST, OPTIONS\naccess-control-allow-origin: *\ncontent-length: 1\ncontent-type: text/html; charset=utf-8\ndate: Wed, 11 Nov 2026 20:15:44 GMT\netag: W/\"1-G2RTiSRzpGfQc3LUXrBavCAxZHo\"\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=2y%2Fz1WIXzKAZ0GgtqYUbp5ukkmiHYYQKpCo08bY03zM%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1794428144\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=2y%2Fz1WIXzKAZ0GgtqYUbp5ukkmiHYYQKpCo08bY03zM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1794428144\"\nserver: Heroku\nvary: Accept-Encoding\nvia: 1.1 heroku-router\nx-powered-by: Express\nx-ratelimit-limit: 1000000\nx-ratelimit-remaining: 995578\nx-ratelimit-reset: 1794486814\nconnection: close",
-            "responseBody": "4"
-          }
-        },
-        {
-          "name": "Apisitt ensures that the body of the last response does equal 4",
-          "outcome": "SUCCESS",
-          "duration": 1,
-          "children": [],
-          "type": "Interaction",
-          "startedAt": "2026-11-11T20:15:44.654Z",
-          "location": {
-            "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
-            "line": 21,
-            "column": 24
           }
         }
       ],
@@ -1261,8 +1234,39 @@ window.__SERENITY_REPORT_DATA__ = {
               }
             }
           ]
+        },
+        {
+          "outcome": "ERROR",
+          "run": "2494",
+          "timestamp": "2026-11-12T06:48:07.012Z",
+          "duration": 5032,
+          "activities": [
+            {
+              "name": "Apisitt sends a request to calculate 2 + 2",
+              "outcome": "SUCCESS",
+              "duration": 6745,
+              "children": [],
+              "type": "Interaction",
+              "startedAt": "2026-11-12T06:48:07.023Z",
+              "location": {
+                "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
+                "line": 20,
+                "column": 22
+              }
+            }
+          ],
+          "error": {
+            "name": "Error",
+            "message": "Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)",
+            "stack": "Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)\n    at createTimeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/errors.js:329:15)\n    at Test._timeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:429:12)\n    at Timeout.<anonymous> (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:240:26)\n    at listOnTimeout (node:internal/timers:685:17)\n    at processTimers (node:internal/timers:618:7)"
+          }
         }
       ],
+      "error": {
+        "name": "Error",
+        "message": "Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)",
+        "stack": "Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)\n    at createTimeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/errors.js:329:15)\n    at Test._timeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:429:12)\n    at Timeout.<anonymous> (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:240:26)\n    at listOnTimeout (node:internal/timers:685:17)\n    at processTimers (node:internal/timers:618:7)"
+      },
       "cast": [
         {
           "name": "Apisitt",
@@ -1296,9 +1300,9 @@ window.__SERENITY_REPORT_DATA__ = {
     {
       "name": "POST /v4 supports calculating multiple expressions in one request",
       "category": "Math-js API",
-      "outcome": "SUCCESS",
-      "duration": 116,
-      "startedAt": "2026-11-11T20:15:44.673Z",
+      "outcome": "ERROR",
+      "duration": 5018,
+      "startedAt": "2026-11-12T06:48:12.050Z",
       "source": {
         "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts"
       },
@@ -1315,43 +1319,37 @@ window.__SERENITY_REPORT_DATA__ = {
       "activities": [
         {
           "name": "Apisitt sends a request to calculate 2 + 2, 5 - 3",
-          "outcome": "SUCCESS",
-          "duration": 99,
-          "children": [],
+          "outcome": "PENDING",
+          "duration": 0,
+          "children": [
+            {
+              "name": "Apisitt ensures that the body of the last response does equal 4",
+              "outcome": "SUCCESS",
+              "duration": 2,
+              "children": [],
+              "type": "Interaction",
+              "startedAt": "2026-11-12T06:48:13.768Z",
+              "location": {
+                "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
+                "line": 21,
+                "column": 24
+              }
+            }
+          ],
           "type": "Interaction",
-          "startedAt": "2026-11-11T20:15:44.677Z",
+          "startedAt": "2026-11-12T06:48:12.056Z",
           "location": {
             "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
             "line": 39,
             "column": 22
           },
-          "artifacts": [
-            {
-              "path": "test-runs/2489/serenity-js-mocha-template-1/artifact-post-http---api-mathjs-org-v4-4dbeb6ff40.json",
-              "type": "screenshot"
-            }
-          ],
           "restQuery": {
-            "method": "POST",
-            "url": "http://api.mathjs.org/v4",
-            "requestHeaders": "Accept: application/json, text/plain, */*\nContent-Type: application/json\nUser-Agent: axios/1.20.0\nContent-Length: 26\nAccept-Encoding: gzip, compress, deflate, br",
-            "requestBody": "{\"expr\":[\"2 + 2\",\"5 - 3\"]}",
+            "method": "GET",
+            "url": "http://api.mathjs.org/v4?expr=2%20%2B%202",
+            "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "access-control-allow-headers: Content-Type, X-Requested-With\naccess-control-allow-methods: GET, POST, OPTIONS\naccess-control-allow-origin: *\ncontent-length: 33\ncontent-type: application/json; charset=utf-8\ndate: Wed, 11 Nov 2026 20:15:44 GMT\netag: W/\"21-PDaWl99xbv/H4ay/y9fMm3Dv4GM\"\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=2y%2Fz1WIXzKAZ0GgtqYUbp5ukkmiHYYQKpCo08bY03zM%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1794428144\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=2y%2Fz1WIXzKAZ0GgtqYUbp5ukkmiHYYQKpCo08bY03zM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1794428144\"\nserver: Heroku\nvary: Accept-Encoding\nvia: 1.1 heroku-router\nx-powered-by: Express\nx-ratelimit-limit: 1000000\nx-ratelimit-remaining: 995661\nx-ratelimit-reset: 1794486015\nconnection: close",
-            "responseBody": "{\n    \"result\": [\n        \"4\",\n        \"2\"\n    ],\n    \"error\": null\n}"
-          }
-        },
-        {
-          "name": "Apisitt ensures that the body of the last response does equal { result: [ \"4\", \"2\" ], error: null }",
-          "outcome": "SUCCESS",
-          "duration": 0,
-          "children": [],
-          "type": "Interaction",
-          "startedAt": "2026-11-11T20:15:44.777Z",
-          "location": {
-            "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
-            "line": 43,
-            "column": 24
+            "responseHeaders": "access-control-allow-headers: Content-Type, X-Requested-With\naccess-control-allow-methods: GET, POST, OPTIONS\naccess-control-allow-origin: *\ncontent-length: 1\ncontent-type: text/html; charset=utf-8\ndate: Thu, 12 Nov 2026 06:48:07 GMT\netag: W/\"1-G2RTiSRzpGfQc3LUXrBavCAxZHo\"\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=%2FgzIqATqgUaRTxCJ7u%2BZC1N8wWqArI9SA11VY6VWzOs%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1794466087\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=%2FgzIqATqgUaRTxCJ7u%2BZC1N8wWqArI9SA11VY6VWzOs%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1794466087\"\nserver: Heroku\nvary: Accept-Encoding\nvia: 1.1 heroku-router\nx-powered-by: Express\nx-ratelimit-limit: 1000000\nx-ratelimit-remaining: 996111\nx-ratelimit-reset: 1794529465\nconnection: close",
+            "responseBody": "4"
           }
         }
       ],
@@ -2557,8 +2555,61 @@ window.__SERENITY_REPORT_DATA__ = {
               }
             }
           ]
+        },
+        {
+          "outcome": "ERROR",
+          "run": "2494",
+          "timestamp": "2026-11-12T06:48:07.012Z",
+          "duration": 5018,
+          "activities": [
+            {
+              "name": "Apisitt sends a request to calculate 2 + 2, 5 - 3",
+              "outcome": "PENDING",
+              "duration": 0,
+              "children": [
+                {
+                  "name": "Apisitt ensures that the body of the last response does equal 4",
+                  "outcome": "SUCCESS",
+                  "duration": 2,
+                  "children": [],
+                  "type": "Interaction",
+                  "startedAt": "2026-11-12T06:48:13.768Z",
+                  "location": {
+                    "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
+                    "line": 21,
+                    "column": 24
+                  }
+                }
+              ],
+              "type": "Interaction",
+              "startedAt": "2026-11-12T06:48:12.056Z",
+              "location": {
+                "path": "/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts",
+                "line": 39,
+                "column": 22
+              },
+              "restQuery": {
+                "method": "GET",
+                "url": "http://api.mathjs.org/v4?expr=2%20%2B%202",
+                "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
+                "statusCode": 200,
+                "responseHeaders": "access-control-allow-headers: Content-Type, X-Requested-With\naccess-control-allow-methods: GET, POST, OPTIONS\naccess-control-allow-origin: *\ncontent-length: 1\ncontent-type: text/html; charset=utf-8\ndate: Thu, 12 Nov 2026 06:48:07 GMT\netag: W/\"1-G2RTiSRzpGfQc3LUXrBavCAxZHo\"\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=%2FgzIqATqgUaRTxCJ7u%2BZC1N8wWqArI9SA11VY6VWzOs%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1794466087\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=%2FgzIqATqgUaRTxCJ7u%2BZC1N8wWqArI9SA11VY6VWzOs%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1794466087\"\nserver: Heroku\nvary: Accept-Encoding\nvia: 1.1 heroku-router\nx-powered-by: Express\nx-ratelimit-limit: 1000000\nx-ratelimit-remaining: 996111\nx-ratelimit-reset: 1794529465\nconnection: close",
+                "responseBody": "4"
+              }
+            }
+          ],
+          "error": {
+            "name": "Error",
+            "message": "Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)",
+            "stack": "Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)\n    at createTimeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/errors.js:329:15)\n    at Test._timeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:429:12)\n    at Timeout.<anonymous> (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:240:26)\n    at listOnTimeout (node:internal/timers:685:17)\n    at processTimers (node:internal/timers:618:7)"
+          }
         }
       ],
+      "error": {
+        "name": "Error",
+        "message": "Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)",
+        "stack": "Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/__w/serenity-js-mocha-template/serenity-js-mocha-template/spec/math-js_api.spec.ts)\n    at createTimeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/errors.js:329:15)\n    at Test._timeoutError (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:429:12)\n    at Timeout.<anonymous> (file:///__w/serenity-js-mocha-template/serenity-js-mocha-template/node_modules/mocha/lib/runnable.js:240:26)\n    at listOnTimeout (node:internal/timers:685:17)\n    at processTimers (node:internal/timers:618:7)"
+      },
       "cast": [
         {
           "name": "Apisitt",
@@ -3240,6 +3291,32 @@ window.__SERENITY_REPORT_DATA__ = {
         "consistency": 0,
         "completeness": 100
       }
+    },
+    {
+      "timestamp": "2026-11-12T06:48:07.012Z",
+      "duration": 10056,
+      "outcomes": {
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "compromised": 0,
+        "error": 2
+      },
+      "label": "2494",
+      "slowest": 5032,
+      "fastest": 5018,
+      "average": 5025,
+      "commit": "2c0056516b285a44098a35185f97f7e2eda0f213",
+      "branch": "main",
+      "ciJobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/43170556090",
+      "repositoryUrl": "https://github.com/serenity-js/serenity-js-mocha-template",
+      "score": {
+        "confidence": 30,
+        "passRate": 0,
+        "consistency": 0,
+        "completeness": 100
+      }
     }
   ],
   "tags": [
@@ -3247,16 +3324,16 @@ window.__SERENITY_REPORT_DATA__ = {
       "type": "feature",
       "name": "Math-js API",
       "scenarioCount": 2,
-      "passed": 2,
-      "failed": 0,
+      "passed": 0,
+      "failed": 2,
       "skipped": 0
     },
     {
       "type": "module",
       "name": "serenity-js-mocha-template",
       "scenarioCount": 2,
-      "passed": 2,
-      "failed": 0,
+      "passed": 0,
+      "failed": 2,
       "skipped": 0
     }
   ],
@@ -3277,22 +3354,20 @@ window.__SERENITY_REPORT_DATA__ = {
           "name": "serenity-js-mocha-template"
         }
       ],
-      "inconsistencyRate": 0.2,
+      "inconsistencyRate": 0.4,
       "history": [
         "SUCCESS",
         "SUCCESS",
         "SUCCESS",
         "SUCCESS",
-        "SUCCESS",
-        "SUCCESS",
         "ERROR",
         "ERROR",
         "SUCCESS",
-        "SUCCESS"
+        "SUCCESS",
+        "ERROR",
+        "ERROR"
       ],
       "labels": [
-        "2460",
-        "2460",
         "2472",
         "2472",
         "2477",
@@ -3300,12 +3375,13 @@ window.__SERENITY_REPORT_DATA__ = {
         "2484",
         "2484",
         "2489",
-        "2489"
+        "2489",
+        "2494",
+        "2494"
       ]
     }
   ],
-  "newFailures": [],
-  "newPasses": [
+  "newFailures": [
     {
       "name": "GET /v4/?expr supports calculating a single expression",
       "category": "Math-js API",
@@ -3341,8 +3417,9 @@ window.__SERENITY_REPORT_DATA__ = {
       ]
     }
   ],
+  "newPasses": [],
   "systemContext": {
-    "nodeVersion": "v24.22.2",
+    "nodeVersion": "v24.22.3",
     "os": {
       "name": "linux",
       "version": "7.0.0-1019-azure",
@@ -3356,12 +3433,12 @@ window.__SERENITY_REPORT_DATA__ = {
     "browsers": [],
     "ci": {
       "provider": "GitHub Actions",
-      "buildNumber": "2489",
+      "buildNumber": "2494",
       "branch": "main",
-      "commit": "13c8b4830f0ed453c899280cd4df40fa0f9e107e",
-      "commitMessage": "chore(deps): update node.js to v24.22.3 (#1083)",
+      "commit": "2c0056516b285a44098a35185f97f7e2eda0f213",
+      "commitMessage": "chore(deps): update dependency node to v24.22.3 (#1084)",
       "commitAuthor": "renovate[bot]",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/43094668016",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/43170556090",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-mocha-template",
       "triggeredBy": "renovate[bot]"
@@ -3373,12 +3450,12 @@ window.__SERENITY_REPORT_DATA__ = {
     "type": "directory",
     "name": "spec",
     "outcomes": {
-      "passed": 2,
+      "passed": 0,
       "failed": 0,
       "pending": 0,
       "skipped": 0,
       "compromised": 0,
-      "error": 0
+      "error": 2
     },
     "scenarioCount": 2,
     "children": [
@@ -3386,18 +3463,18 @@ window.__SERENITY_REPORT_DATA__ = {
         "type": "file",
         "name": "math-js_api",
         "outcomes": {
-          "passed": 2,
+          "passed": 0,
           "failed": 0,
           "pending": 0,
           "skipped": 0,
           "compromised": 0,
-          "error": 0
+          "error": 2
         },
         "scenarioCount": 2,
         "scenarios": [
           {
             "name": "GET /v4/?expr supports calculating a single expression",
-            "outcome": "SUCCESS",
+            "outcome": "ERROR",
             "executionHistory": [
               "SUCCESS",
               "SUCCESS",
@@ -3423,12 +3500,13 @@ window.__SERENITY_REPORT_DATA__ = {
               "SUCCESS",
               "SUCCESS",
               "ERROR",
-              "SUCCESS"
+              "SUCCESS",
+              "ERROR"
             ]
           },
           {
             "name": "POST /v4 supports calculating multiple expressions in one request",
-            "outcome": "SUCCESS",
+            "outcome": "ERROR",
             "executionHistory": [
               "SUCCESS",
               "SUCCESS",
@@ -3454,21 +3532,22 @@ window.__SERENITY_REPORT_DATA__ = {
               "SUCCESS",
               "SUCCESS",
               "ERROR",
-              "SUCCESS"
+              "SUCCESS",
+              "ERROR"
             ]
           }
         ],
         "score": {
-          "confidence": 97,
-          "passRate": 100,
+          "confidence": 56,
+          "passRate": 0,
           "completeness": 100,
-          "consistency": 92
+          "consistency": 88
         }
       }
     ],
     "score": {
-      "confidence": 97,
-      "passRate": 100,
+      "confidence": 56,
+      "passRate": 0,
       "completeness": 100,
       "consistency": 100
     }
