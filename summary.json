@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-11-12T21:48:33.432Z",
+  "generated": "2026-11-18T13:36:53.441Z",
   "title": "@serenity-js/serenity-js-mocha-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "2315e1e465e5fcc9ac750a503ed688808cf9d464",
+    "commit": "8609f6b8dceb0c8f4ed7696025791dbfc4187b91",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/43313680125"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-template/actions/runs/44315319793"
   },
   "latestRun": {
-    "timestamp": "2026-11-12T21:48:32.975Z",
-    "label": "2498",
+    "timestamp": "2026-11-18T13:36:50.614Z",
+    "label": "2506",
     "totals": {
       "passed": 2,
       "failed": 0,
@@ -20,16 +20,16 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 439
+    "duration": 2794
   },
-  "runs": 27,
+  "runs": 28,
   "delta": {
-    "passed": 2,
+    "passed": 0,
     "failed": 0,
     "pending": 0,
     "skipped": 0,
     "compromised": 0,
-    "error": -2
+    "error": 0
   },
   "failureClusters": [],
   "consistency": {
@@ -39,16 +39,6 @@
     "recovered": [
       {
         "name": "GET /v4/?expr supports calculating a single expression",
-        "source": "math-js_api.spec.ts",
-        "lastOutcome": "SUCCESS"
-      },
-      {
-        "name": "GET /v4/?expr supports calculating a single expression",
-        "source": "math-js_api.spec.ts",
-        "lastOutcome": "SUCCESS"
-      },
-      {
-        "name": "POST /v4 supports calculating multiple expressions in one request",
         "source": "math-js_api.spec.ts",
         "lastOutcome": "SUCCESS"
       }
@@ -64,12 +54,12 @@
     {
       "name": "GET /v4/?expr supports calculating a single expression",
       "source": "math-js_api.spec.ts",
-      "duration": 345
+      "duration": 2565
     },
     {
       "name": "POST /v4 supports calculating multiple expressions in one request",
       "source": "math-js_api.spec.ts",
-      "duration": 92
+      "duration": 225
     }
   ]
 }
